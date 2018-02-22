@@ -33,7 +33,7 @@ def clearlog():
         os.remove(logfile)
 
     
-    return hello()
+    return redirect(url_for('hello'))
 
 
 if __name__ == "__main__":
