@@ -29,10 +29,11 @@ def hello():
 @application.route("/clearlog")
 def clearlog():
 
-if os.path.isfile(logfile):
-    os.remove(logfile)
+    if os.path.isfile(logfile):
+        os.remove(logfile)
+
     
-    return hello()   
+    return hello()
 
 
 if __name__ == "__main__":
