@@ -15,8 +15,11 @@ def hello():
         data=myfile.read()
         
         
-    return "Hello World! Greetings from "+socket.gethostname()+"\n\nLogfile:\n"+data
+    output = "<html><body><h1>Hello World! Greetings from "+socket.gethostname()+"</h1>\n"
+    output += "<h2>Logfile:</h2>\n"
+    output += "<pre>"+data+"</pre></body></html>"
     
+    return output   
 
 
 if __name__ == "__main__":
