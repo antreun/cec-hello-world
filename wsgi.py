@@ -32,8 +32,7 @@ def clearlog():
     if os.path.isfile(logfile):
         os.remove(logfile)
 
-    
-    return redirect(url_for('hello'))
+    return "Log cleared! <a href=\"/\">Go back</a>"
 
 
 if __name__ == "__main__":
